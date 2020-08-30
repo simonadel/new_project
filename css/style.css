@@ -1,5 +1,5 @@
 .header {
-	background-image:url('scr.jpg');
+	background-image:url('../images/scr.jpg');
 	height:300PX;
 	text-align:center;
 }
@@ -20,6 +20,11 @@
 	    text-transform:capitalize;
 		padding-top:40px;
 }
+ .header .nabar button {
+	 padding:10px;
+	 border:2px solid #black;
+	 box-shadow:10px #CCC;
+ }
 
 .text{
 	background:black;
@@ -202,7 +207,7 @@ margin-left:15px;
 }
 .myskills .int .technique h3{
 	color:#555;
-	margin-left:30px;
+	
 	
 }
 .myskills .for button{
