@@ -1,140 +1,236 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
- <meta charset="utf-8">
- <title>my project simon</title
-  <link rel="stylesheet" href="normalize.css"/>
-  <link rel="stylesheet" href="css/style.css"/>
-  <link rel="stylesheet" href="css/brands.min.css"/>
-  <link rel="stylesheet" href="css/fontawesome.min.css"/>
-  <link rel="stylesheet" href="css/solid.min.css"/>
+<meta charset="utf-8">
+<title>my project simon</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
+      rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+  crossorigin="anonymous">
+  <!--  <link rel="stylesheet" href="bootstrap.css"/>-->
+ <link rel="stylesheet" href="css/bstyle.css"/>
+<script>
+var alertList = document.querySelectorAll('.alert')
+alertList.forEach(function (alert) {
+  new bootstrap.Alert(alert)
+})
+
+</script>
+
 </head>
 <body>
-<div class="header" >
-  <div class="container">
-   <div class="nabar">
-     <h1>this is project simon adel</h1>
-     <p>information technology</p>
-     <div class="login">
-     <input type="button" name="send info" value="login" onclick="send info">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar navbar-dark bg-dark  position-fixed" style="z-index:2;width:100%" >
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="#carouselExampleControls">carousel</a>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#min">about</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#carouselExampleCaptions">skills</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="#exampleInputEmail1">form</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#exampleInputEmail1" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
     </div>
-   </div>
- </div>
+  </div>
+  
+</nav>
 </div>
-<div class="text">
- <div class="container">
-  <ul>
-    <li class="text1">si<span style="color:#0eecc0">mon</span></li>
-    <li><a href="My Skills">  Skills</a></li>
-    <li><a href="paragraph"> hopples</a></li>
-    <li><a href="heading">  goals</a></li>
-  </ul>
- </div>
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imga/prog.jpg" class="d-block w-100" alt="..." style="height:500px; ">
+	  
+	     <div class="container">
+          <div class="carousel-caption">
+            <h1>simon adel.</h1>
+            <p>I am a programmer.</p>
+<button type="button" class="btn btn-secondary">read more</button>
+      </div>
+	  </div>
+	  </div>
+    <div class="carousel-item">
+      <img src="imga/wep.jpg" class="d-block w-100" alt="..."style="height:500px; ">
+	     <div class="carousel-caption">
+            <p>I am a wep desiner.</p>
+			</div>
+    </div>
+    <div class="carousel-item">
+      <img src="imga/net.jpg" class="d-block w-100" alt="..."style="height:500px; ">
+	   <div class="carousel-caption">
+            <p>I am Network Engineer.</p>
+			</div>
+    </div>
+	</div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
-<div class="fea">
- <div class="container">
-  <div class="feat">
-   <h2>my skills</h2>
-   <p>Learn how to deal with the programming languages ​​C Plus Plus, HTML, CSS, and JavaScript</p>
-  </div>
-  <div class="feat">
-    <h2>my hopples</h2>
-    <p>I hope to learn a lot about programming <br>languages in all areas of information technology</p>
-  </div>
-  <div class="feat">
-    <h2>My goals</h2>
-    <p>My goal is to become a famous programmer and work in the biggest companies</p>
-  </div>
- </div>
-</div>
-<div class="about">
- <div class="container">
-  <div class="image">
-  <img src="images/inform.jpg"/>
-  </div>
-   <div class="info">
-   <h3>What is information technology?</h3>
-   <p>IT involves everything from computer management to collecting, storing, and securing data.<br>
-   IT also extends to telephone networks and other forms of electronic communication.<br>
-   The role of IT professionals may include hardware and software management, electronic data governance, <br>
-   and daily IT operations such as technical support or network maintenance.</p>
+<div class="card mb-3" style="max-width:100%;margin:10px;">
+  <div class="row g-0">
+    <div class="col-md-4" id="imag">
+      <img  src="imga/sim.jpg" style="width:450px;height:500px;">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h3 class="card-title" id="min">about</h3>
+        <p class="card-text" style="font-size:20px;color:#aeb7ba">My name is Simon Adel. I studied in the faculty of computers and information and did a lot of <br>activities such as participating in a web team and a lot of that</p>
+        <p class="card-text"><small class="text-muted">
+		<div class="card" style="width: 25rem; line-height:30px;font-size:22px;">
+     <ul class="list-group list-group-flush">
+	          <div class="col-lg-6" style="width:100%;height:300px; line-height:35px; font-size:22px;">
+                <ul>
+                  <li><i class="fas fa-arrow-circle-right"></i> <strong>Birthday:</strong> 1 octobar 2001</li>
+                  <li><i class="fas fa-arrow-circle-right"></i> <strong>Website:</strong> <a id="ur" target="_blank">https://github.com/simonadel/git-course</a> </li>
+                  <li><i class="fas fa-arrow-circle-right"></i> <strong>Phone:</strong> 01157852822</li>
+                  <li><i class="fas fa-arrow-circle-right"></i> <strong>City:</strong> sohag, Egypt</li>
+				   <li><i class="fas fa-arrow-circle-right"></i> <strong>Degree:</strong>Front Developer</li>
+				    <li><i class="fas fa-arrow-circle-right"></i> <strong>freelans:</strong>Available</li>
 
-   </div>
- </div>
-</div>
-<div class="myskills">
- <div class="container">
-  <div class="for">
-   <h2>my skills</h2>
-   <p>I have a lot of skills in the field of programming.<br> 
-   I can work in many fields about computers such as networks<br>
-   and also the web design and<br>
-   also with software and he can present a lot of presentations, 
-   different techniques and symbols</p>
-   <button>contact me</button>
+
+                </ul>
+              </div>
+            </ul>
+        </div></small></p>
+      </div>
+    </div>
   </div>
-   <div class="int">
-    <div class="technique">
+  </div>
+  <br>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+	        <img src="imga/min.jpg" alt="..." style="width:250px; height:200px">
+        <h5 class="card-title">team compeiler</h5>
+        <p class="card-text">I work with the team. Be a year. I gained a lot of experience in the field of the web and practiced it in many languages.</p>
+        <a href="#" class="btn btn-primary">log in</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+	    <img src="imga/cisco.jpg" alt="..." style="width:250px; height:200px">
+        <h5 class="card-title">Cisco Networks</h5>
+        <p class="card-text">He was a company in the awarding of Cisco Networks, and he also acquired a lot of certificates, a degree in Linux.</p>
+        <a href="https://www.netacad.com/" class="btn btn-primary">log in</a>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+	<img src="imga/sim.jpg"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">
+		<img src="imga/simo.jpg"></button>
+
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">
+		<img src="imga/simon.jpg"></button>
+
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="color:#546e78">
+	   <h3>Skills</h3>
+        <p>I have a certificate from cisco academy in ccna and here you can see it ,<br>
+		I have soft skills from cisco and i have presentation skills from being an<br></p>
+      <div class="carousel-caption d-none d-md-block">
+       
+      </div>
+    </div>
+    <div class="carousel-item" style="color:#546e78">
+         <h3>My Hopples</h3>
+        <p>I hope to learn a lot about programming,<br>
+         languages in all areas of information technolog and <br>
+	 know a lot about the web and networks and serve all people</p>
+		<div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+    <div class="carousel-item" style="color:#546e78">
+        <h3>Experts</h3>
+        <p>I have soft skills from cisco and i have presentation skills from being an<br>
+		ٍSpeacker with students in the students activit .</p>
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+</div>
+<div style=" margin:20px; height:400px; padding:10px;color:#aeb7ba">
+<div class="container">
+<h2>skills</h2>
+<p>Explain the skills that I possess in a representative form</p>
+<div style="float:left;width:60%">
+
+ <div class="technique">
 	  <h3>html</h3>
 	 <div>
-	  <span style="width:90%">90% &nbsp </span>
+ <div class="progress-bar" role="progressbar" style="width:50%;"aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
 	</div>
    </div>
  <div class="technique">
 	 <h3>css</h3>
 	<div>
-	 <span style="width:85%">85% &nbsp </span>
+ <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
 	</div>
  </div>
   <div class="technique">
-	<h3>javascript</h3>
-   <div>
-	 <span style="width:70%">70% &nbsp </span>
-   </div>
-  </div>
+	 <h3>js</h3>
+	<div>
+ <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
+	</div>
+ </div>
+  <div class="technique">
+	 <h3>bootstrap</h3>
+	<div>
+ <div class="progress-bar" role="progressbar" style="width:45%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
+	</div>
+ </div>
+ </div>
  <div class="technique">
-	<h3>bootstrap</h3>
- <div>
-	<span style="width:60%">60% &nbsp </span>
+	 <h3>jquery</h3>
+	<div>
+ <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+	</div>
+ </div><div class="technique">
+	 <h3>php</h3>
+	<div>
+ <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
+	</div>
+	</div>
  </div>
-  </div>
  </div>
-</div>
-</div>
-<div class="test">
-<div class="container">
-<q>It is also rare to find happiness in a man surrounded by a miracle of technology 
-more than people who live in the jungle desert
- who are considered by the standards our society sets are backward and disconnected.</q>
-<h3>Thor Heyerdahl </h3>
-<ul>
-<li class="active"></li>
-<li></li>
-<li></li>
-<li></li>
-</ul>
-</div>
-</div>
-<div class="imag">
- <div class="container">
- <div class="info">
-  <h2>portfolio</h2>
-  <p>You can see some of the works that were designed with IT through these pictures</p>
-  </div>
-  <div class="work">
-   <div class="sin"><img src="images/down1.jpg" style="height:230px" /></div>
-   <div class="sin"><img src="images/inform.jpg"/></div>
-   <div class="sin"><img src="images/down3.jpg"/></div>
-   <div class="sin"><img style="height:182px"  src="images/down4.jpg"/></div>
-   <div class="sin"><img src="images/down5.jpg"/></div>
-   <div class="sin"><img src="images/down6.jpg"/></div>
-   </div>
  </div>
-</div>
-<div class="contact">
- <div class="container">
-  <div class="na">
+ <hr>
+<form>
+<div style="width:100%; margin:20px;padding:10px;background-color:#eef1f2;height:480px; color:#969a9d">
+ <div class="container" >
+  <div class="na" style="width:50%;float:left;line-height:30px;color#aeb7ba">
   <h2>contact me</h2>
   <p>you can communicat with this date</p>
   <p>
@@ -143,44 +239,60 @@ more than people who live in the jungle desert
   sohag
   </p>
   <p>
-  <strong>Email:</strong>simonadel25.com<br>
-    <strong>phone:</strong>01252538532<br>		
-  <strong>github:</strong>simonadel<br>		
-  <strong>facebook-f:</strong>simon adel<br>		
+  <li style="list-style-type:none;"><a href="https://mail.google.com/mail/u/0/?pli=1#inbox"><i class="fas fa-envelope-square" id="si"></i></a> <strong>Email:</strong>simonadel25.com</li><br>
+   <li style="list-style-type:none;"><a href=""><i class="fas fa-phone-square-alt" id="si"></i></a><strong>phone:</strong>01252538532<br></li>		
+ <li style="list-style-type:none;"><a href="https://github.com/"><i class="fab fa-github-square" id="si"></i> </a><strong>github:</strong>simonadel<br>		</li>
+<li style="list-style-type:none;"><a href="https://www.facebook.com/thawartshad/"><i class="fab fa-facebook-f" id="si"></i></a>  <strong>facebook-f:</strong>simon adel<br>	</li>	
+  <li  style="list-style-type:none;"><a href="https://web.telegram.org/#/im" id="si"><i class="fab fa-telegram"></i></a> <strong>telegram:</strong>simo adel<br>	</li>	
 
   </p>
   </div>
-  <div class="form">
-  <form>
-  <fieldset>
-  <br>
-  <label>name</label>
-  <input type="text"placeholder="enter username">
-  <label>Email</label>
-  <input type="text" placeholder=" enter the Email">
-<br><br>
-<textarea rows="8" placeholder="enter a message"></textarea>
-</fieldset>
-  </form>
+  <div style="float:left; width:50%; height:200px;">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
   </div>
- </div>
-</div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+ <div class="col-12">
+    <label for="inputAddress2" class="form-label">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">City</label>
+    <input type="text" class="form-control" id="inputCity">
+  </div>
 
-<div class="text3">
- <div class="container">
-  copyrigt &copy simon adel<br>
-  share out here
- <ul>
-  <li><a href="fac"><i class="fab fa-facebook-f"></i></a></li>
-  <li><a href="mes"> <i class="fab fa-facebook-messenger"></i></a></li>
-  <li><a href="tel"><i class="fab fa-telegram"></i></a></li>
-  <li><a href="what"><i class="fab fa-whatsapp"></i></a></li>
-  <li><a href="you"> <i class="fab fa-youtube"></i></a></li>
-  </ul>
+   <div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+</div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+</div>
+</div>
+</form>
  </div>
 </div>
+<footer>
+copyright &copy 
+simon adel 2020
+<img src="imga/simon.jpg" style="height:40px;width:40px" class="tharw">
+</footer>
   <script src="js/brands.min.js"></script>
   <script src="js/fontawesome.min.js"></script>
   <script src="js/solid.min.js"></script>
+ <!-- <script src="jquery-3.3.1.min.js"></script>
+  <script src="jquery.js"></script>
+  <script src="bootstrap.min.js"></script>-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" 
+        crossorigin="anonymous"></script>
+
 </body>
 </html>
